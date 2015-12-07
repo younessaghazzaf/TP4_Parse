@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="departement">
+        <item>Rennes</item>
+        <item>Paris</item>
+        <item>Nantes</item>
+        <item>Bordeaux</item>
+    </string-array>
+</resources>
