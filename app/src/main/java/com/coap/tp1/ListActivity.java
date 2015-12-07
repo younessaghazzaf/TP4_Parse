@@ -140,11 +140,12 @@ public class ListActivity extends Activity{
     public void onStop (){
         super.onStop();
         stopService(intent);
+        unregisterReceiver(receiver);
     }
 
     public class MyWebRequestReceiver extends BroadcastReceiver{
 
-        public static final String PROCESS_RESPONSE = "com.as400samplecode.intent.action.PROCESS_RESPONSE";
+        public static final String PROCESS_RESPONSE = "com.coap.tp1.intent.action.PROCESS_RESPONSE";
 
         @Override
         public void onReceive(Context context, Intent intent) {
